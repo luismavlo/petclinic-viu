@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('pets', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('client_id');
+            $table->integer('client_id');
             $table->string('photo');
             $table->string('name');
             $table->date('birthdate');
             $table->string('race');
-            $table->bigInteger('specie_id');
+            $table->integer('specie_id');
            // $table->timestamps();
             $table->rememberToken();
             $table->timestamps();
